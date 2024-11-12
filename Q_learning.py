@@ -1,6 +1,7 @@
 import numpy as np
 import pandas as pd
 
+# Given a Markov decision process, this algorithm finds the best policy that maximizes the total expected reward
 def Q_learning(data_path, n_states, n_actions, gamma=0.95, alpha=0.1, iterations=100):
     data = pd.read_csv(data_path)
 
